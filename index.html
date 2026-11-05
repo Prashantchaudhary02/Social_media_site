@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>Connect<span>.</span></h2>
+
+        <input type="text" placeholder="Search..." id="search">
+
+        <div class="profile">
+            <div class="avatar">Y</div>
+            <span>You</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="#">🏠 Home</a>
+            <a href="#create-post">➕ Create Post</a>
+            <a href="#feed">❤️ Activity</a>
+            <a href="#">👤 Profile</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <div class="welcome">
+                <h1>Good to see you 👋</h1>
+                <p>What's happening in your world today?</p>
+            </div>
+
+            <!-- Create Post -->
+            <div class="create-post" id="create-post">
+
+                <div class="post-input">
+                    <div class="avatar">Y</div>
+
+                    <textarea
+                        id="postInput"
+                        placeholder="Share something with your community..."
+                    ></textarea>
+                </div>
+
+                <div class="post-footer">
+                    <span id="charCount">0 / 500</span>
+                    <button id="publishBtn">Publish Post</button>
+                </div>
+
+            </div>
+
+            <!-- Feed -->
+            <div class="feed-header" id="feed">
+                <h2>Your Feed</h2>
+                <span>Latest Posts</span>
+            </div>
+
+            <div id="postsContainer"></div>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+
+            <div class="info-card">
+                <h3>Community</h3>
+                <p>
+                    Your space, your people.
+                    Share thoughts and connect with others.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Quick Tips</h3>
+                <p>• Share something positive.</p>
+                <p>• Support other posts.</p>
+                <p>• Respect everyone.</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
